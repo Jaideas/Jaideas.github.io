@@ -14,7 +14,7 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: #0d1117;
   }
-  #navbar
+  .navbar
   {
     background-color: #000;
     position: fixed;
@@ -23,7 +23,7 @@
     display: block;
     transition: top 0.3s;
   }
-  #navbar a
+  .navbar a
   {
     float: left;
     font-size: 16px;
@@ -32,7 +32,11 @@
     padding: 14px 16px;
     text-decoration: none;
   }
-  #navbar a:hover, #subnav:hover #subnavbtn
+  .navbar a.right
+  {
+    float: right;
+  }
+  .navbar a:hover
   {
     background-color: #223;
   }
@@ -127,13 +131,13 @@
     -ms-flex: 70%;
     flex: 70%;
     background-color: #0d1117;
-    padding: 20px;
+    padding: 50px 20px 20px;
   }
   </style>
   <div class = "raw">
     <div class = "main">
-      <h1 align = "center">梦不仅在梦中</h1>
-      <h2 align = "center">Dream it not only in dreams.</h2>
+      <h1 align = "center" style = "color: white">梦不仅在梦中</h1>
+      <h2 align = "center" style = "color: white">Dream it not only in dreams.</h2>
     </div>
   </div>
   <div class = "hamburger-menu">
@@ -145,8 +149,8 @@
       <li><a class = "menu__item" href="#">首页</a></li>
     </ul>
   </div>
-  <div id = "navbar">
-  <a href = "" class = "right">someone</a>
+  <div class = "navbar">
+    <a href = "" class = "right">someone</a>
   </div> 
 </body>
 </html>
